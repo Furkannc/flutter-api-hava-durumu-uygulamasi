@@ -1,16 +1,25 @@
-# asd
+**Flutter ile api kullanarak hava durumu uygulaması**
+***
 
-A new Flutter project.
+***Cihazın internet erişimine izin vermek için:
+AndroidManifest.xml içerisine yazmanız gereken kod***
+![internetpermisson](https://github.com/Furkannc/flutter-api-hava-durumu-uygulamasi/blob/main/images/internet_permisson.png?raw=true)
+***
 
-## Getting Started
+***Http ve icon paketlerini eklemek için  pubspec.yaml dosyası içine dependices satırı altına eklemeniz gereken kodlar***
+![dependencices](https://github.com/Furkannc/flutter-api-hava-durumu-uygulamasi/blob/main/images/dependencies.png?raw=true)
+***
 
-This project is a starting point for a Flutter application.
+***Api key almak için aşağıdaki siteyi kullanabilirsiniz***
+https://openweathermap.org/current
+***
+***Api key'i bu kısma yazarak kullanamaya başlayabilirsiniz***
 
-A few resources to get you started if this is your first Flutter project:
+    http.Response  response = await  http.get(Uri.parse("https://api.openweathermap.org/data/2.5/weather?q=$selectedsehir&units=imperial&appid= {HERE API KEY} "));
+***
+**Uygulama içi görseller**
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![enter image description here](https://github.com/Furkannc/flutter-api-hava-durumu-uygulamasi/blob/main/images/1.png?raw=true)
+
+![enter image description here](https://github.com/Furkannc/flutter-api-hava-durumu-uygulamasi/blob/main/images/2.png?raw=true)
